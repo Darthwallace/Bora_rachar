@@ -4,67 +4,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D4D4D4"
     tools:context=".MainActivity">
+
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:layout_marginBottom="62dp"
+        android:layout_marginBottom="54dp"
         android:autoText="false"
-        android:background="@color/white"
         android:text="Bora Rachar"
+        android:textAlignment="center"
+        android:textColor="#75AE03"
         android:textSize="48sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <EditText
         android:id="@+id/editTextValor"
-        android:layout_width="128dp"
+        android:layout_width="0dp"
         android:layout_height="59dp"
-        android:layout_marginEnd="125dp"
-        android:layout_marginBottom="6dp"
-        android:hint="0.00"
+        android:layout_marginTop="215dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="216dp"
+        android:hint="Real"
         android:inputType="numberDecimal"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        android:textColor="@color/white"
+        android:textColorHighlight="#D4D4D4"
+        android:textColorLink="#D4D4D4"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView4" />
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextQuantidadePessoas"
-        android:layout_width="95dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
-        android:layout_marginTop="79dp"
-        android:layout_marginEnd="123dp"
-        android:layout_marginBottom="79dp"
-        android:hint="0.00"
+        android:layout_marginEnd="128dp"
+        android:hint="Pessoas"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/buttonCalcular"
+        android:textColor="#F4F1F1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
     <Button
         android:id="@+id/buttonCalcular"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="41dp"
+        android:layout_width="367dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="11dp"
+        android:background="#75AE03"
+        android:backgroundTint="#75AE03"
         android:text="Calcular"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="#72D60C"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFalar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResultado" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="53dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -73,25 +86,25 @@
 
     <TextView
         android:id="@+id/textViewResultado"
-        android:layout_width="233dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="208dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="15dp"
         android:gravity="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonCalcular"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="62dp"
-        android:layout_marginEnd="54dp"
-        android:layout_marginBottom="79dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonCalcular"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="20dp"
+        android:background="#0003F6A1"
+        app:layout_constraintBottom_toTopOf="@+id/textViewResultado"
         app:layout_constraintEnd_toStartOf="@+id/editTextQuantidadePessoas"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
@@ -99,11 +112,11 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="71dp"
-        android:layout_height="137dp"
-        android:layout_marginStart="62dp"
-        android:layout_marginEnd="59dp"
-        android:layout_marginBottom="36dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintEnd_toStartOf="@+id/editTextValor"
         app:layout_constraintStart_toStartOf="parent"
@@ -112,20 +125,35 @@
 
     <Button
         android:id="@+id/buttonFalar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="26dp"
         android:text="Falar resultado"
-        app:layout_constraintEnd_toEndOf="@+id/buttonCalcular"
+        android:textAlignment="center"
+        android:textColor="#75AE03"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonCompartilhar"
         app:layout_constraintTop_toBottomOf="@+id/buttonCalcular" />
 
     <Button
         android:id="@+id/buttonCompartilhar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_width="175dp"
+        android:layout_height="106dp"
+        android:layout_marginEnd="38dp"
+        android:background="#75AE03"
+        android:backgroundTint="#75AE03"
         android:text="Compartilhar"
+        android:textAlignment="center"
+        android:textColor="#75AE03"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonFalar"
+        app:layout_constraintEnd_toStartOf="@+id/buttonFalar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCalcular" />
+        app:layout_constraintTop_toTopOf="@+id/buttonFalar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
